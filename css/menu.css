@@ -1,0 +1,51 @@
+/* 
+    Created on : 13/02/2015, 11:05:35 AM
+    Author     : andres
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#nav{
+    margin: auto;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.menu li a{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.menu li a:hover{
+    background-color: #434343;
+}
+.menu > li{
+    float: left;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+.menu li ul li{
+    position:relative;
+}
+
+.menu li ul li ul{
+    right: -140px;
+    top: 0px;
+}
